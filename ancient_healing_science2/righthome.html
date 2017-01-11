@@ -1,0 +1,113 @@
+<link rel="stylesheet" type="text/css" href="css/style.css"  />
+  <link rel="stylesheet" type="text/css" href="css/simpleTicker.css">
+<style type="text/css">
+body {background:none transparent; color:#4a4b4c;
+}
+</style>	<div class="cont_right">
+			<h2>About me </h2>
+			<div class="con_box_inn">
+					<div style="background:#FFFFFF; padding:5px;">
+						<img src="images/images01.jpg" alt="Reiki Healing"  />
+					</div>
+				</div>
+			
+
+<h2>Testimonials</h2>
+			<div class="con_box_inn" >
+					
+						<div id="tickerContainer" style="background:#FFFFFF; padding:5px; " >
+
+      <dl id="ticker">
+        <dt class="heading">Naveen Kumar</dt><dd class="text">alskfasdf;lkj asdlkfjasdlkj adslkfjas;ldjoiew asdlfkjlsahkajhads sadkjhaslkdj sdkjfhlkasjhf a kljasdhfklasjdh laksdjfhaslkdjfh akljdsfhkalsjdhf lkajsdhflkasjdf alksdjfhaklsdjfhaskdljh asdfkljashdkfhwiuekjasdh. 
+<br>
+as;ldkfjasdl;kfjasd;lfkjdasdlkfjkjsadfhlkja kasjdhfkl asjdfhlk asdfhlkjasd hflkjas dhfkljasdhf kljasdhf lkajsdhf lkjashdflkjashfiouweyhoiuyhrkl jbhm,cnbliuedhf,
+</dd>
+        <dt class="heading">Parvesh</dt><dd class="text">sl;adkjfweoiurpqoiwueropweiurpoweqiurpoweiurpoiwqeurpoiuwepoirum,nczxlkjhnsd;kljioufapoiujeoiwj;lksda foj d;oifau sioufyhewo ifuespoiu fpoisu f
+ </dd>
+        <dt class="heading">Naveen Kumar</dt><dd class="text">alskfasdf;lkj asdlkfjasdlkj adslkfjas;ldjoiew asdlfkjlsahkajhads sadkjhaslkdj sdkjfhlkasjhf a kljasdhfklasjdh laksdjfhaslkdjfh akljdsfhkalsjdhf lkajsdhflkasjdf alksdjfhaklsdjfhaskdljh asdfkljashdkfhwiuekjasdh. 
+<br>
+as;ldkfjasdl;kfjasd;lfkjdasdlkfjkjsadfhlkja kasjdhfkl asjdfhlk asdfhlkjasd hflkjas dhfkljasdhf kljasdhf lkajsdhf lkjashdflkjashfiouweyhoiuyhrkl jbhm,cnbliuedhf,
+</dd>
+        <dt class="heading">Parvesh</dt><dd class="text">sl;adkjfweoiurpqoiwueropweiurpoweqiurpoweiurpoiwqeurpoiuwepoirum,nczxlkjhnsd;kljioufapoiujeoiwj;lksda foj d;oifau sioufyhewo ifuespoiu fpoisu f
+ </dd><dt class="heading">Naveen Kumar</dt><dd class="text">alskfasdf;lkj asdlkfjasdlkj adslkfjas;ldjoiew asdlfkjlsahkajhads sadkjhaslkdj sdkjfhlkasjhf a kljasdhfklasjdh laksdjfhaslkdjfh akljdsfhkalsjdhf lkajsdhflkasjdf alksdjfhaklsdjfhaskdljh asdfkljashdkfhwiuekjasdh. 
+<br>
+as;ldkfjasdl;kfjasd;lfkjdasdlkfjkjsadfhlkja kasjdhfkl asjdfhlk asdfhlkjasd hflkjas dhfkljasdhf kljasdhf lkajsdhf lkjashdflkjashfiouweyhoiuyhrkl jbhm,cnbliuedhf,
+</dd>
+        <dt class="heading">Parvesh</dt><dd class="text">sl;adkjfweoiurpqoiwueropweiurpoweqiurpoweiurpoiwqeurpoiuwepoirum,nczxlkjhnsd;kljioufapoiujeoiwj;lksda foj d;oifau sioufyhewo ifuespoiu fpoisu f
+ </dd><dt class="heading">Naveen Kumar</dt><dd class="text">alskfasdf;lkj asdlkfjasdlkj adslkfjas;ldjoiew asdlfkjlsahkajhads sadkjhaslkdj sdkjfhlkasjhf a kljasdhfklasjdh laksdjfhaslkdjfh akljdsfhkalsjdhf lkajsdhflkasjdf alksdjfhaklsdjfhaskdljh asdfkljashdkfhwiuekjasdh. 
+<br>
+as;ldkfjasdl;kfjasd;lfkjdasdlkfjkjsadfhlkja kasjdhfkl asjdfhlk asdfhlkjasd hflkjas dhfkljasdhf kljasdhf lkajsdhf lkjashdflkjashfiouweyhoiuyhrkl jbhm,cnbliuedhf,
+</dd>
+        <dt class="heading">Parvesh</dt><dd class="text">sl;adkjfweoiurpqoiwueropweiurpoweqiurpoweiurpoiwqeurpoiuwepoirum,nczxlkjhnsd;kljioufapoiujeoiwj;lksda foj d;oifau sioufyhewo ifuespoiu fpoisu f
+ </dd>
+      </dl>
+    </div>
+	
+					</div>
+				<div class="newsletter">
+					<h3>E-Newsletter Signup</h3>
+					<form action="#" method="post">
+					<input type="text" name="search" placeholder="E-mail" class="input_fild" /> <input type="submit" value=""  class="submit" />
+					</form>
+					</div>
+				</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+	  $(function() {
+	  
+		//cache the ticker
+		var ticker = $("#ticker");
+		  
+		//wrap dt:dd pairs in divs
+		ticker.children().filter("dt").each(function() {
+		  
+		  var dt = $(this),
+		    container = $("<div>");
+		  
+		  dt.next().appendTo(container);
+		  dt.prependTo(container);
+		  
+		  container.appendTo(ticker);
+		});
+				
+		//hide the scrollbar
+		ticker.css("overflow", "hidden");
+		
+		//animator function
+		function animator(currentItem) {
+		    
+		  //work out new anim duration
+		  var distance = currentItem.height();
+			duration = (distance + parseInt(currentItem.css("marginTop"))) / 0.025;
+
+		  //animate the first child of the ticker
+		  currentItem.animate({ marginTop: -distance }, duration, "linear", function() {
+		    
+			//move current item to the bottom
+			currentItem.appendTo(currentItem.parent()).css("marginTop", 0);
+
+			//recurse
+			animator(currentItem.parent().children(":first"));
+		  }); 
+		};
+		
+		//start the ticker
+		animator(ticker.children(":first"));
+				
+		//set mouseenter
+		ticker.mouseenter(function() {
+		  
+		  //stop current animation
+		  ticker.children().stop();
+		  
+		});
+		
+		//set mouseleave
+		ticker.mouseleave(function() {
+		          
+          //resume animation
+		  animator(ticker.children(":first"));
+		  
+		});
+	  });
+    </script>
